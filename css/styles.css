@@ -1,0 +1,225 @@
+:root{
+    --main-blue: #2196F3;
+    --main-black: #000000;
+    --main-blackish: #212121;
+    --main-grey: #757575;
+    --main-background: #2F303A;
+    --main-white: #ffffff;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--main-white);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list {
+    list-style: none;
+    text-decoration: none;
+}
+
+.logomain {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19em;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--main-black);
+}
+
+.logoweb {
+    color: var(--main-blue);
+}
+
+.mainmenu {
+    font-weight: 500;
+    color: var(--main-blackish);
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.mainmenu:hover, .mainmenu:focus {
+    color: var(--main-blue);
+}
+
+.current {
+    color: var(--main-blue);
+}
+
+.maincontacts {
+    color: var(--main-grey);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.maincontacts:hover, .maincontacts:focus {
+    color: var(--main-blue);
+}
+
+.mainpagebox {
+    background-color: var(--main-background);    
+}
+
+.mainpagebox h1 {
+    color: var(--main-white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.37em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.mainpagebox button {
+    color: var(--main-white);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88em;
+    letter-spacing: 0.06em;
+    background-color: var(--main-blue);
+    cursor: pointer;
+}
+
+h2,
+h3 {
+    color: var(--main-blackish);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17em;
+    letter-spacing: 0.03em;
+}
+
+.visually-hidden {
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        clip-path: inset(50%);
+        margin: -1px; 
+}
+
+.titlebenefits {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.textbenefits {
+    color: var(--main-grey);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7em;
+    letter-spacing: 0.03em;
+}
+
+.team {
+    background-color: #F5F4FA;
+}
+
+.teammember {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.88em;
+    letter-spacing: 0.03em;
+}
+
+.teamposition {
+    color: var(--main-grey);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88em;
+    letter-spacing: 0.03em;
+}
+
+footer {
+    background-color: var(--main-background);
+}
+
+.logostudio {
+    color: var(--main-white);
+}
+
+address {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7em;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+.postaladdress {
+    color: var(--main-white);
+}
+
+.otheraddress {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.postaladdress:hover, .postaladdress:focus {
+    color: var(--main-blue);
+}
+
+.otheraddress:hover, .otheraddress:focus {
+    color: var(--main-blue);
+}
+
+.projects {
+    list-style: none;
+}
+
+.projects button {
+    color: var(--main-blackish);
+    font-family: inherit;
+    border: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6em;
+    letter-spacing: 0.03em;
+    background-color: #F5F4FA;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.projectsbutton:hover, .projectsbutton:focus {
+    background-color: var(--main-blue);
+    color: var(--main-white);
+}
+
+.portfoliotitle {
+    color: var(--main-blackish);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2em;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+}
+
+.description {
+    color: var(--main-grey);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88em;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+
+
+
