@@ -24,7 +24,8 @@ header {
 
 .container {
     width: 1200px;
-    padding: 94px 215px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 a {
@@ -46,9 +47,7 @@ a {
     text-decoration: none;
     color: var(--main-black);
     margin-top: 24px;
-    margin-left: 215px;
     margin-bottom: 25px;
-    margin-right: 1240px;
     display: inline-block; 
 }
 
@@ -59,8 +58,6 @@ a {
 ul .mainmenu {
     margin-top: 32px;
     margin-bottom: 32px;
-    margin-left: 453px;
-    margin-right: 866px;
     display: inline-block;
 }
 
@@ -79,20 +76,6 @@ ul .mainmenu {
 
 .current {
     color: var(--main-blue);
-}
-
-a[href="mailto:info@devstudio.com"] {
-    margin-top: 32px;
-    margin-bottom: 32px;
-    margin-left: 1078px;
-    display: inline-block;
-}
-
-a[href="tel:+380961111111"] {
-    margin-top: 32px;
-    margin-bottom: 32px;
-    margin-left: 1078px;
-    display: inline-block;
 }
 
 .maincontacts {
@@ -136,6 +119,10 @@ a[href="tel:+380961111111"] {
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     margin-bottom: 200px;
+}
+
+h1 {
+    display: block;
 }
 
 h2,
@@ -238,6 +225,8 @@ address {
 
 .otheraddress {
     color: rgba(255, 255, 255, 0.6);
+    padding: 0;
+    margin: 0;
 }
 
 .postaladdress:hover, .postaladdress:focus {
