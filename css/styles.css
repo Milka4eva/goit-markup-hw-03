@@ -1,3 +1,5 @@
+/*Page Styles*/
+
 :root{
     --main-blue: #2196F3;
     --main-black: #000000;
@@ -6,26 +8,10 @@
     --main-background: #2F303A;
     --main-white: #ffffff;
 }
+
 body {
     font-family: "Roboto", sans-serif;
     background-color: var(--main-white);
-}
-
-header, h1, h2, ul, footer {
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    width: 1600px;
-    outline: solid #ECECEC;
-    outline-width: 1px;
-}
-
-.container {
-    width: 1200px;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 a {
@@ -38,6 +24,32 @@ a {
     text-decoration: none;
 }
 
+header, h1, h2, ul, footer {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    outline: solid #ECECEC;
+    outline-width: 1px;
+}
+
+.container {
+    width: 1200px;
+    padding-top: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*Header Styles*/
+
+.mainnav {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
 .logomain {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -45,32 +57,67 @@ a {
     line-height: 1.19em;
     letter-spacing: 0.03em;
     text-decoration: none;
+    
     color: var(--main-black);
-    margin-top: 24px;
-    margin-bottom: 25px;
-    display: inline-block; 
+    
+    display: flex; 
 }
 
 .logoweb {
     color: var(--main-blue);
 }
 
-ul .mainmenu {
-    margin-top: 32px;
-    margin-bottom: 32px;
-    display: inline-block;
+.menunav {
+    display: flex;
+    margin-left: 40px;
+}
+
+.menunav li + li {
+    margin-left: 50px;
+}
+
+.contactsnav {
+    display: flex;
+    margin-left: auto;
+}
+
+.contactsnav li + li {
+    margin-left: 50px;
 }
 
 .mainmenu {
     font-weight: 500;
-    color: var(--main-blackish);
     font-size: 14px;
     line-height: 1.14em;
     letter-spacing: 0.02em;
     text-decoration: none;
+
+    color: var(--main-blackish);
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.maincontacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14em;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: var(--main-grey);
+
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .mainmenu:hover, .mainmenu:focus {
+    color: var(--main-blue);
+}
+
+.maincontacts:hover, .maincontacts:focus {
     color: var(--main-blue);
 }
 
@@ -78,46 +125,40 @@ ul .mainmenu {
     color: var(--main-blue);
 }
 
-.maincontacts {
-    color: var(--main-grey);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14em;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-}
-
-.maincontacts:hover, .maincontacts:focus {
-    color: var(--main-blue);
-}
+/*Main Styles*/
 
 .mainpagebox {
     background-color: var(--main-background);
+
     text-align: center;
 }
 
-.mainpagebox h1 {
-    color: var(--main-white);
+.mainpagetitle {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.37em;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-top: 200px;
-    margin-bottom: 30px;
+
+    color: var(--main-white);
+
+    padding-top: 200px;
+    padding-bottom: 30px;
 }
 
 .mainpagebox button {
-    color: var(--main-white);
     font-size: 16px;
     font-weight: 700;
     line-height: 1.88em;
     letter-spacing: 0.06em;
-    background-color: var(--main-blue);
     cursor: pointer;
-    padding: 10px 32px;
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    color: var(--main-white);
+    background-color: var(--main-blue);
+
+    padding: 10px 32px;
     margin-bottom: 200px;
 }
 
@@ -136,6 +177,7 @@ h2 {
     line-height: 1.17em;
     letter-spacing: 0.03em;
     text-align: center;
+
     margin-bottom: 50px;
 }
 
@@ -152,34 +194,73 @@ h2 {
         margin: -1px; 
 }
 
+.benefits {
+    display: flex;
+}
+
+.benefits li + li {
+    margin-left: 30px;
+}
+
 .titlebenefits {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14em;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
     margin-bottom:10px;
 }
 
 .textbenefits {
-    color: var(--main-grey);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7em;
     letter-spacing: 0.03em;
+
+    color: var(--main-grey);
+}
+
+.works {
+    margin-bottom: 104px;
+}
+
+.works ul {
+    display: flex;
+}
+
+.works li + li {
+    margin-left: 30px;
 }
 
 .team {
     background-color: #F5F4FA;
 }
 
-.ourteamname {
+h2 .ourteamname {
     margin-top: 94px;
     display: inline-block;
+    text-align: center;
 }
 
 .container .teamsection {
     margin-top: 0;
+}
+
+.teamsection ul {
+    display: flex;
+    padding-bottom: 104px;
+}
+
+.teamsection li + li {
+    margin-left: 30px;
+}
+
+.teamsection li {
+    background-color: #ffffff;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .teammember {
@@ -187,23 +268,43 @@ h2 {
     font-size: 16px;
     line-height: 1.88em;
     letter-spacing: 0.03em;
+
     margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
 }
 
 .teamposition {
-    color: var(--main-grey);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88em;
     letter-spacing: 0.03em;
+
+    color: var(--main-grey);
+
     margin-bottom: 30px;
     text-align: center;
 }
 
+/*Footer Styles*/
+
 footer {
     background-color: var(--main-background);
+}
+
+.logofooter {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19em;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    
+    color: var(--main-black);
+    
+    padding-top: 50px;
+    margin-bottom: 20px;
+    display: block; 
 }
 
 .logostudio {
@@ -217,6 +318,8 @@ address {
     line-height: 1.7em;
     letter-spacing: 0.03em;
     text-decoration: none;
+    display: block;
+    padding-bottom: 60px;
 }
 
 .postaladdress {
@@ -236,6 +339,8 @@ address {
 .otheraddress:hover, .otheraddress:focus {
     color: var(--main-blue);
 }
+
+/*Portfolio Styles*/
 
 .projects {
     list-style: none;
