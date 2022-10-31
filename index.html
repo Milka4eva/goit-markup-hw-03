@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Головна</title>
+<link rel="stylesheet" href="css/styles.css">       
+<title>Головна</title>
     </head>
     <body>
         <!--Верхня лінія-->
@@ -20,23 +20,23 @@
                     <li><a class="mainmenu list" href="portfolio.html">Портфоліо</a></li>
                     <li><a class="mainmenu list" href="">Контакти</a></li>
                 </ul>
+            </nav>
                 <ul class="contactsnav list">
                     <li><a class="maincontacts list" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="maincontacts list" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
-            </nav>
         </header>
         <!--Шапка-->
         <main>
             <!--Герой-->
             <section class="mainpagebox">
                 <h1 class="mainpagetitle">
-                    Ефективні рішення для <br> Вашого бізнесу
+                    Ефективні рішення для Вашого бізнесу
                 </h1>
                 <button type="button">Замовити послугу</button>
             </section>
             <!--Особливості-->
-            <section>
+            <section class="benefit">
                 <div class="container">
                 <h2 class="visually-hidden">Наші особливості</h2>
                 <ul class="benefits list">
@@ -60,7 +60,7 @@
                 </div>
             </section>
             <!--Чим ми займаємося-->
-            <section>
+            <section class="work">
                 <div class="container works">
                 <h2>Чим ми займаємося</h2>
                 <ul class="list">
@@ -99,8 +99,10 @@
                         width="260" 
                         alt="ihor_demyanenko"
                         >
+                        <div class="teamdiv">
                         <h3 class="teammember">Ігор Дем'яненко</h3>
                         <p class="teamposition">Product Designer</p>
+                        </div>
                     </li>
                     <li>
                         <img 
@@ -108,8 +110,10 @@
                         width="260" 
                         alt="olha_repina"
                         >
+                        <div class="teamdiv">
                         <h3 class="teammember">Ольга Рєпіна</h3>
                         <p class="teamposition">Frontend Developer</p>
+                        </div>
                     </li>
                     <li>
                         <img 
@@ -117,8 +121,10 @@
                         width="260" 
                         alt="mykola_tarasov"
                         >
+                        <div class="teamdiv">
                         <h3 class="teammember">Микола Тарасов</h3>
                         <p class="teamposition">Marketing</p>
+                        </div>
                     </li>
                     <li>
                         <img 
@@ -126,8 +132,10 @@
                         width="260" 
                         alt="mykhailo_yermakov"
                         >
+                        <div class="teamdiv">
                         <h3 class="teammember">Михайло Єрмаков</h3>
                         <p class="teamposition">UI Designer</p>
+                        </div>
                     </li>
                 </ul>
                 </div>
@@ -135,6 +143,7 @@
         </main>
         <footer>
         <!--Підвал-->
+        <div class="footerdiv">
             <a href="/" class="logofooter"><span class="logoweb">Web</span><span class="logostudio">Studio</span></a>
             <address>
             <ul class="list">
@@ -143,6 +152,7 @@
                <li class="otheraddress"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
             </address>
+        </div>
         </footer>
     </body>
 </html>

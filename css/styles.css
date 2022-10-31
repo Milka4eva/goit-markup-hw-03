@@ -24,21 +24,21 @@ a {
     text-decoration: none;
 }
 
-header, h1, h2, ul, footer {
+header, h1, h2, ul {
     margin: 0;
     padding: 0;
 }
 
 header {
-    outline: solid #ECECEC;
-    outline-width: 1px;
+    border-bottom: 1 px solid #ECECEC;
 }
 
 .container {
     width: 1200px;
-    padding-top: 94px;
     padding-left: 15px;
     padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*Header Styles*/
@@ -46,8 +46,6 @@ header {
 .mainnav {
     display: flex;
     align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 .logomain {
@@ -69,7 +67,7 @@ header {
 
 .menunav {
     display: flex;
-    margin-left: 40px;
+    margin-left: 93px;
 }
 
 .menunav li + li {
@@ -131,6 +129,8 @@ header {
     background-color: var(--main-background);
 
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .mainpagetitle {
@@ -142,8 +142,8 @@ header {
 
     color: var(--main-white);
 
-    padding-top: 200px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+    width: 696 px;
 }
 
 .mainpagebox button {
@@ -159,7 +159,6 @@ header {
     background-color: var(--main-blue);
 
     padding: 10px 32px;
-    margin-bottom: 200px;
 }
 
 h1 {
@@ -171,6 +170,11 @@ h3 {
     color: var(--main-blackish);
 }
 
+.benefit {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 h2 {
     font-weight: 700;
     font-size: 36px;
@@ -179,6 +183,11 @@ h2 {
     text-align: center;
 
     margin-bottom: 50px;
+}
+
+.titlebenefits, .textbenefits {
+    margin: 0;
+    padding: 0;
 }
 
 .visually-hidden {
@@ -221,8 +230,8 @@ h2 {
     color: var(--main-grey);
 }
 
-.works {
-    margin-bottom: 104px;
+.work {
+    padding-bottom: 94px;
 }
 
 .works ul {
@@ -235,6 +244,8 @@ h2 {
 
 .team {
     background-color: #F5F4FA;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 h2 .ourteamname {
@@ -249,7 +260,6 @@ h2 .ourteamname {
 
 .teamsection ul {
     display: flex;
-    padding-bottom: 104px;
 }
 
 .teamsection li + li {
@@ -263,13 +273,22 @@ h2 .ourteamname {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
+.teammember, .teamposition {
+    margin: 0;
+    padding: 0;
+}
+
+.teamdiv {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .teammember {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.88em;
     letter-spacing: 0.03em;
 
-    margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -282,7 +301,6 @@ h2 .ourteamname {
 
     color: var(--main-grey);
 
-    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -290,6 +308,20 @@ h2 .ourteamname {
 
 footer {
     background-color: var(--main-background);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer .list {
+    padding: 0;
+    margin: 0;
+}
+
+.footerdiv {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 60px;
 }
 
 .logofooter {
@@ -320,17 +352,22 @@ address {
     text-decoration: none;
 
     display: block;
-    padding-bottom: 60px;
 }
 
 .postaladdress {
     color: var(--main-white);
+    padding: 0;
+    margin: 0;
 }
 
 .otheraddress {
     color: rgba(255, 255, 255, 0.6);
     padding: 0;
     margin: 0;
+}
+
+.otheraddress {
+    margin-top: 9px;
 }
 
 .postaladdress:hover, .postaladdress:focus {
@@ -342,9 +379,9 @@ address {
 }
 
 /*Portfolio Styles*/
-
-.portfolio {
-    margin-bottom: 94px;
+.pageportfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .projects {
@@ -402,17 +439,15 @@ address {
     margin-bottom: 30px;
 }
 
-.projectlist  {
-    outline: solid #EEEEEE;
-    outline-width: 1px;
-}
-
 .portfolioflex {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: auto;
+    padding-right: auto;
+    border: 1px solid #EEEEEE;
 }
 
 .portfolioflex > .description {
@@ -430,6 +465,7 @@ address {
 
     margin: 0;
     padding: 0;
+    margin-bottom: 4px;
 }
 
 .description {
